@@ -1,3 +1,18 @@
+
+
+
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#grid {
+    width: 960px;
+    height: 960px;
+    border-color: black;
+}
+
 .trail {
     background-color: black;
 }

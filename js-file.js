@@ -1,8 +1,8 @@
-const container = document.querySelector('#container');
+const grid = document.querySelector('#grid');
 
 for (let row = 0; row < 16; row++) {
   newRow = document.createElement('div');
-  newRow.style.cssText = 'display: flex; justify-items: center;'
+  newRow.classList.add('center');
   
   for (let col = 0; col < 16; col++) {
     newCol = document.createElement('div');
@@ -11,10 +11,8 @@ for (let row = 0; row < 16; row++) {
     newCol.classList.add('tile');
     newRow.appendChild(newCol);
   }
-  container.appendChild(newRow);
+  grid.appendChild(newRow);
 }
-
-const grid = document.querySelector('#container');
 
 grid.addEventListener('mouseover', (event) => {
   event.target.classList.add('trail');
